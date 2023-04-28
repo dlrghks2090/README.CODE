@@ -155,33 +155,24 @@ ex)
 # 실습 
 
 
-# Test 모델을 이용한 Test 도출
+# 서비스 고객 MBTI에 따른 금융 상품 추천 서비스 웹
+* Github Url: https://github.com/shiny0510/프로젝트레포 (꼭! 하이퍼링크)
+* Requirement: AWS, React, Node.js, Apache
 
-* Github Url: https://github.com/shiny0510/FewShot_GAN-Unet3D (꼭! 하이퍼링크)
+1. 수행 기관: 하나은행 Digital hana 路 데이터분석/서비스기획 1기 금융서비스개발
+2. 역할: Back-end, Server, 팀장, 트러블 슈팅)
+3. Method: 고객 성향에 맞는 금융 상품 추천 서비스, API, 결제 시스템, 본인인증, 로그인 
 
-* requirement: pandas, numpy, torch, seaborn, matplotlib
 
-1. 수행 기관:  부트캠프 (역할: Method 튜닝, 전처리, 팀장, 트러블 슈팅)
-
-2. 데이터: 환자 데이터 10000개, 정상인 데이터 20만개
-
-3. Method:  전처리: 이미지 Normalize + MixUp(Augmentation) + Denosing               
-            모델: F-AnoGAN (Medical Image Analysis, 2019.05)
-	         optimizer: Adam 
-            loss: L1 loss
-	<img src="https://user-images.githubusercontent.com/85111065/173891979-c4353c43-345f-4cec-8a4f-d818e00d97f5.png" width="500">
 
 4. 결과: <br>
+![image](https://user-images.githubusercontent.com/85111065/235016412-4fe98a58-4d65-42e6-978e-e67173c64e46.png)
+![image](https://user-images.githubusercontent.com/85111065/235016442-a1eead57-6944-4183-8070-d1cb30784aca.png)
 
-* Anomaly detection: <br>
-	<img src="https://user-images.githubusercontent.com/85111065/173892034-27a00459-f7af-4ed7-877c-45baa59f2a10.png" width="500" >
 
-* Acc: <br>
-	<img src="https://user-images.githubusercontent.com/85111065/173892050-d0406ab4-e31b-43c1-bfa7-cd121428e1aa.png" width="500" >
+* 프로젝트 수행 중 문제: 다수의 접속자가 접속할 경우 서버가 다운되는 현상 발생, 아파치 셋팅을 통해서 
+예상 접속자에 맞게 수정을 진행.
 
-* 프로젝트 수행 중 문제: 정상인 데이터에서도 미세한 Anomaly가 검출되어서, 환자로 분류하는 threshold를
-    높혀줌으로써 정확히 분류될 수 있도록 조치하였으며, 데이터가 부족하여 오픈데이터를 다수 활용.
-
-5. 참고: Schlegl, Thomas, et al. "f-AnoGAN: Fast unsupervised anomaly detection with generative 
-    adversarial networks." Medical image analysis 54 (2019): 30-44.
+5. 참고: 아파치 서버 셋팅 깃허브 https://github.com/shiny0510/Hana_README_example_Source,
+논문 사이트 http://www.riss.kr/search/detail/ssoSkipDetailView.do?p_mat_type=1a0202e37d52c72d&control_no=c500e79d48c6855fffe0bdc3ef48d419
 
