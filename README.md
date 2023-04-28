@@ -167,7 +167,7 @@ ex)
 
 4. 결과: <br>
 ![image](https://user-images.githubusercontent.com/85111065/235016412-4fe98a58-4d65-42e6-978e-e67173c64e46.png)
-![image](https://user-images.githubusercontent.com/85111065/235016442-a1eead57-6944-4183-8070-d1cb30784aca.png)
+![image](https://user-images.githubusercontent.com/85111065/235016502-f69a488d-fd21-45c9-b00c-ce3c7aa87473.png)
 
 
 * 프로젝트 수행 중 문제: 다수의 접속자가 접속할 경우 서버가 다운되는 현상 발생, 아파치 셋팅을 통해서 
